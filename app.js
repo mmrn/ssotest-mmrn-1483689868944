@@ -57,7 +57,7 @@ if (isSso) {
     scope: ssoConfig.credentials.serverSupportedScope[0],
     response_type: 'code',
     clientSecret: ssoConfig.credentials.secret,
-    callbackURL: 'https://ssotest-mmrn.mybluemix.net/auth/sso/callback',
+    callbackURL: 'https://ssotest-mmrn.mybluemix.net',
     skipUserProfile: true,
     issuer: ssoConfig.credentials.issuerIdentifier
   }, function(accessToken, refreshToken, profile, done) {
