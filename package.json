@@ -8,9 +8,11 @@
 	"dependencies": {
 		"express": "4.13.x",
 		"cfenv": "1.0.x"
+	        "passport": "0.3.2",
 	},
 	"repository": {},
 	"engines": {
 		"node": "4.x"
+	        "npm": "~2.14.12"
 	} 
 }
