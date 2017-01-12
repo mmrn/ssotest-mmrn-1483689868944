@@ -19,14 +19,14 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 // get the app environment from Cloud Foundry
-var appEnv = cfenv.getAppEnv();
+//var appEnv = cfenv.getAppEnv();
 
 // start server on the specified port and binding host
-// app.listen(appEnv.port, '0.0.0.0', function() { //編集
-app.listen(appEnv.port, function() {
+//app.listen(appEnv.port, '0.0.0.0', function() { //編集
+//app.listen(appEnv.port, function() {
   // print a message when the server starts listening
-  console.log("server starting on " + appEnv.url);
-});
+//  console.log("server starting on " + appEnv.url);
+//});
 
 // 以下を追加（松尾さんのサンプルをコピー）
 var passport = require('passport');
